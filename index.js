@@ -34,6 +34,12 @@ app.get('/category/:id', (req, res) => {
     }
 })
 
+// all news api
+
+app.get('/news', (req, res) => {
+    res.send(news);
+})
+
 // news categories
 
 app.get('/categories', (req, res) => {
